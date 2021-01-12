@@ -1,4 +1,3 @@
-#https://www.youtube.com/watch?v=sJF6PiAjE1M
 import os
 import torch
 import torchvision
