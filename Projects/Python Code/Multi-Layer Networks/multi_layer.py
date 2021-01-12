@@ -1,4 +1,3 @@
-#https://www.youtube.com/watch?v=9suSsTVhYuw
 import torch
 import torchvision
 from torchvision.datasets import MNIST
