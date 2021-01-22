@@ -119,7 +119,7 @@ class SVMiningModel(ImageClassificationBase):
             nn.ReLU(),
             nn.Linear(1024, 512),
             nn.ReLU(),
-            nn.Linear(512, 10))
+            nn.Linear(512, 3))
         
     def forward(self, xb):
         return self.network(xb)
