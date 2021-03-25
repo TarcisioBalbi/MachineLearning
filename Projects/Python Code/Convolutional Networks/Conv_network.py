@@ -34,7 +34,7 @@ class ImageClassificationBase(nn.Module):
         epoch_loss = torch.stack(batch_losses).mean()
         batch_accs = [x['val_acc'] for x in outputs]
         epoch_acc =torch.stack(batch_accs).mean()
-        return{'val_loss':epoch_loss.item(),'val_acc':epoch_acc.item}
+        return{'val_loss':epoch_loss.item(),'val_acc':epoch_acc.item()}
 
     def epoch_end(self,epoch,result):
         print("Epoch[{}],train_loss:{:.4f},val_loss: {:.4f},val_acc: {:.4f}".format(
